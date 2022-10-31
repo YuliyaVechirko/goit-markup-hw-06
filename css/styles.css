@@ -342,6 +342,17 @@ line-height: 1.17;
 fill: rgba(117, 117, 117, 0.5)
 }
 
+/*.form-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}*/
 
 
 /*Checkbox*/
@@ -384,14 +395,13 @@ fill: rgba(117, 117, 117, 0.5)
     position: absolute;
     top: 50%;
     left: 20px;
-    fill: transparent;
-    fill-opacity: 0;
     transform: translateY(-50%);
     width: 16px;
     height: 15px;
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
     background-color: var(--primary-white-color);
+    background-origin: border-box;
     z-index: -1;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill-opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -399,16 +409,39 @@ fill: rgba(117, 117, 117, 0.5)
 
 .checkbox-input:checked + .checkbox-border  {
     border: none;
-    background-color: var(--accent-colour);
+    background-color: var(--accent-color);
     fill: var(--primary-white-color)
   }
 
-  form-button {
+  .form-button {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 52px;
+    top: 50%;
+    left: 164px;
+    border: none;
+border-radius: 4px;
+padding: 10px 52px;
+min-width: 200px;
+transform: translateY( 50%);
+transform: translate(-50%, -50%) scale(1.2);
+box-shadow: Drop shadow
+Radius: 1px
+Offset: 0px, 2px
+rgba(0, 0, 0, 0.2)
+Effect: Drop shadow
+Radius: 1px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.14)
+Effect: Drop shadow
+Radius: 3px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.12)        
+background-color: var(--accent-color);
+color: var(--primary-white-color);
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;   
   }
 
   
